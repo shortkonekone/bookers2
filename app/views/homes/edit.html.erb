@@ -1,0 +1,33 @@
+  		<h1>Editing Book</h1>
+  		<%= form_with model: @book, local:true do |f| %> v
+</header>
+      <main>
+        <p id="notice"></p>
+        <div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">                                   
+  		<h1>Editing Book</h1>
+    	
+  		<form action="/books/43413" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓">
+  		<input type="hidden" name="_method" value="patch">
+  		<input type="hidden" name="authenticity_token" value="h8eI9th7zYnvN/mWfd+VDbIZiecQ6aVfAXycatJfbUjDr0FGbkdGDEvb6HoU7+Chhx4AdTMt8F6CSXReUf5+cQ==">
+  <div class="form-group">
+    <label for="book_title">Title</label>
+    <input class="form-control book_title" type="text" value="あなたは" name="book[title]" id="book_title">
+  </div>
+  <div class="form-group">
+    <label for="book_opinion">Opinion</label>
+    <textarea class="form-control book_body" name="book[body]" id="book_body">aaaaaaaa</textarea>
+  </div>
+  <div class="form-group">
+    <input type="submit" name="commit" value="Update Book" class="btn btn-success" data-disable-with="Update Book">
+  </div>
+</form>
+  		<a class="book_43413" href="/books/43413">Show</a> |
+  		<a class="back" href="/books">Back</a>
+  </div>
+</div>
+      </div></main>
+ 
+  
+</body>

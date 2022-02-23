@@ -1,0 +1,28 @@
+ <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Bookers2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+   
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<body>
+  <header class="header">
+      
+
+    <% if user_signed_in? %>
+      <li>
+       
+        <a class="book" href="/">Home</a>
+        <a class="book" href="book_path">Users</a>
+        <a class="book" href="books_path">Books</a>
+        <a class="book" href="root_path">Log out</a>
+      </li>
+    <% end %>
+   </header>
+    <%= yield %>
+ </body>
+</html>

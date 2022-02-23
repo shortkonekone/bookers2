@@ -1,0 +1,56 @@
+<body>
+   
+</header>
+      <main>
+        <p id="notice"></p>
+        <div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0">
+      <h2>Sign up</h2>
+      <form id="new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post">
+        <input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="MK7msK+WcEyAymm/XMC0y7bgArDPqI9HXfeleAaUU7Wvv7HpNn4NRG14ts99AMYRM02NIwwTdGZAoRLpwHzWBQ==">
+        
+        <div class="field">
+          <label for="user_name">Name</label><br>
+          <input autofocus="autofocus" class="name" type="text" name="user[name]" id="user_name">
+        </div>
+        <div class="field">
+          <label for="user_email">Email</label><br>
+          <input autofocus="autofocus" class="email" type="email" value="" name="user[email]" id="user_email">
+        </div>
+        <div class="field">
+          <label for="user_password">Password</label>
+          <em>(6 characters minimum)</em>
+          <br>
+          <input autocomplete="off" class="password" type="password" name="user[password]" id="user_password">
+        </div>
+        <div class="field">
+          <label for="user_password_confirmation">Password confirmation</label><br>
+          <input autocomplete="off" class="password_confirm" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+        </div>
+        <div class="actions">
+          <input type="submit" name="commit" value="Sign up" class="btn btn-sm btn-success" data-disable-with="Sign up">
+        </div>
+     <a href="/users/sign_in">Log in</a><br>
+
+</form>       
+
+
+
+
+
+    </div>
+  </div>
+</div>
+      </main>
+    <footer>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="mx-auto">
+        <p>CopyRight Infratop.inc</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+</body>
